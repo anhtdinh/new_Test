@@ -2,6 +2,11 @@
 
 library(dplyr)
 library(gapminder)
+library(googlesheets4)
+library(tidyverse)
+library(ggplot2)
+
+
 # ------
 
 data = gapminder %>% 
@@ -9,3 +14,5 @@ data = gapminder %>%
   arrange(lifeExp) %>% 
   group_by(country) %>% 
   slice_head()
+
+
