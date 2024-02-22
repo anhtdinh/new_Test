@@ -15,4 +15,10 @@ data = gapminder %>%
   group_by(country) %>% 
   slice_head()
 
+data %>% 
+  ggplot(aes(x= gdpPercap,y=lifeExp), color = continent) +
+  geom_point()
+  
 
+
+  
